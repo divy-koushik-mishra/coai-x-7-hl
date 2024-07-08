@@ -1,16 +1,16 @@
 const AboutSection = () => {
   return (
-    <section className="min-h-[60vh] flex flex-col md:flex-row items-center justify-center md:py-24">
+    <section className="min-h-[60vh] flex flex-col md:flex-row items-center justify-center px-4 md:py-24">
       <div className="md:w-1/2 flex justify-center">
-        <img src="/about.jpg" alt="" className="w-1/2 rounded-3xl" />
+        <img src="/about.jpg" alt="" className="md:w-1/2 rounded-3xl" />
       </div>
       <div className="md:w-1/2">
-        <div className="flex flex-col md:w-3/4 space-y-4">
-          <h3 className="text-[#AEAEAE] uppercase tracking-widest my-5">
+        <div className="flex flex-col justify-between items-center md:items-start md:w-3/4 space-y-4">
+          <h3 className="text-[#AEAEAE] uppercase tracking-widest my-5 text-center md:text-left">
             GenAI projects
           </h3>
-          <h2 className="text-5xl">Riding the GenAI bandwagon?</h2>
-          <p className="text-[#AEAEAE]">
+          <h2 className="text-5xl text-center md:text-left">Riding the GenAI bandwagon?</h2>
+          <p className="text-[#AEAEAE] text-center md:text-left">
             Learn What an impactful GenAI project looks like, Calling an API
             isn't helping your resume
           </p>

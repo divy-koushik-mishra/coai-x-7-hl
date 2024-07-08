@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div ref={scrollRef} data-scroll-container>
+    <div ref={scrollRef} className="" data-scroll-container>
       <Hero />
       <CtaSection />
       <AboutSection />
