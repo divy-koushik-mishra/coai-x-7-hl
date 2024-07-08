@@ -1,39 +1,41 @@
-import AboutSection from "./components/AboutSection"
-import CtaSection from "./components/CtaSection"
-import { FaqSection } from "./components/FaqSection"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import OrganizationSection from "./components/OrganizationSection"
-import Sessions from "./components/Sessions"
-import LocomotiveScroll from 'locomotive-scroll';
-
-
+import React, { useEffect, useRef } from "react";
+import AboutSection from "./components/AboutSection";
+import CtaSection from "./components/CtaSection";
+import { FaqSection } from "./components/FaqSection";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import OrganizationSection from "./components/OrganizationSection";
+import Sessions from "./components/Sessions";
+import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll({
-    lenisOptions: {
-        duration: 0.8,
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
-        smoothWheel: true,
-        smoothTouch: true,
-        wheelMultiplier: 1,
-        touchMultiplier: 2,
-        normalizeWheel: true,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-    },
-});  return (
-    <>
-    <Hero />
-    <CtaSection />
-    <AboutSection />
-    <Sessions />
-    <OrganizationSection />
-    <FaqSection />
-    <Footer />
-    </>
-  )
+  useEffect(() => {
+    if (scrollRef.current) {
+      const scroll = new LocomotiveScroll({
+        el: scrollRef.current,
+        smooth: true,
+        // Add other Locomotive Scroll options here if needed
+      });
+
+      return () => {
+        if (scroll) scroll.destroy();
+      };
+    }
+  }, []);
+
+  return (
+    <div ref={scrollRef} data-scroll-container>
+      <Hero />
+      <CtaSection />
+      <AboutSection />
+      <Sessions />
+      <OrganizationSection />
+      <FaqSection />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

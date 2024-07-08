@@ -1,11 +1,11 @@
 const AboutSection = () => {
   return (
-    <section className="min-h-[60vh] flex items-center justify-center py-24">
-      <div className="w-1/2 flex justify-center">
+    <section className="min-h-[60vh] flex flex-col md:flex-row items-center justify-center md:py-24">
+      <div className="md:w-1/2 flex justify-center">
         <img src="/about.jpg" alt="" className="w-1/2 rounded-3xl" />
       </div>
-      <div className="w-1/2">
-        <div className="flex flex-col w-3/4 space-y-4">
+      <div className="md:w-1/2">
+        <div className="flex flex-col md:w-3/4 space-y-4">
           <h3 className="text-[#AEAEAE] uppercase tracking-widest my-5">
             GenAI projects
           </h3>

@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header>
         <TopBar />
-        <nav className="flex justify-between items-center py-10 px-24">
+        <nav className="flex flex-col md:flex-row justify-between items-center py-10 px-24">
             <div className="text-3xl">7-Hidden Layers</div>
             <div className="">
                 <ul className="flex ">

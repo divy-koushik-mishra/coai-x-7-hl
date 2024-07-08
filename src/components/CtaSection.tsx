@@ -1,14 +1,14 @@
 const CtaSection = () => {
   const benefits = ["🔥Access to premium content", "📚Weekly newsletter", "💸Exclusive offers", "⚙️And much more..."];
   return (
-    <section data-scroll data-scroll-speed="0.8" className="bg-[#F0F0F0] flex flex-col space-y-10 items-center justify-center min-h-[60vh] py-24">
-      <h2 className="text-5xl w-1/3 text-center">
+    <section data-scroll data-scroll-speed="0.8" className="bg-[#F0F0F0] flex flex-col space-y-10 items-center justify-center min-h-[60vh] md:py-24">
+      <h2 className="text-5xl md:w-1/3 text-center">
         Join the community today and be a part of it!
       </h2>
-      <div className="w-3/4 flex justify-center items-center  space-x-5">
+      <div className="w-3/4 flex flex-col md:flex-row justify-center items-center  space-x-5">
         <input
           type="text"
-          className="w-1/2 px-10 py-5 rounded-full outline-none"
+          className="md:w-1/2 px-10 py-5 rounded-full outline-none"
           placeholder="Email Address..."
         />
         <button className="bg-[#2B2B2B] rounded-full px-9 py-5 text-white ">

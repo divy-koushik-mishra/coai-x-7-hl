@@ -14,7 +14,7 @@ const Footer = () => {
           Join Now!
         </button>
       </div>
-      <div className="w-full relative bottom-0">
+      <div className="w-full hidden md:block relative bottom-0">
         <h2 className="text-[10rem]  leading-none uppercase text-center text-[#AEAEAE] opacity-70">
           7-Hidden Layers
         </h2>
@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="relative bottom-64 right-80 border border-black w-1/3 py-2 px-4 rounded-b-2xl bg-[#2B2B2B] text-white">
         All right reserved © 2024
       </div>
-      <div className="relative flex items-center justify-between bottom-[18.6rem] left-80 border border-black w-1/3 py-2 px-4 rounded-b-2xl bg-[#2B2B2B] text-white">
+      <div className="relative hidden md:flex   items-center justify-between bottom-[18.6rem] left-80 border border-black w-1/3 py-2 px-4 rounded-b-2xl bg-[#2B2B2B] text-white">
         <RiInstagramLine /> <RiYoutubeLine /> <RiTwitterLine />
       </div>
     </footer>
