@@ -2,7 +2,7 @@ import { RiArrowRightUpLine } from "@remixicon/react";
 
 const Hero = () => {
   return (
-    <section className="w-full flex flex-col justify-between items-center">
+    <section data-scroll className="w-full flex flex-col justify-between items-center">
       <div className="flex flex-col items-center justify-center w-1/2 space-y-7 mb-10 mt-0">
         <h2 className="">AI/ML</h2>
         <h2 className="text-5xl text-center">

@@ -1,11 +1,11 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
 
-const Card = (props: any) => {
+const Card = (props) => {
   return (
     <div className="flex flex-col items-center justify-center border rounded-3xl w-1/3 mx-4 overflow-hidden relative">
       <img
         src="https://cdn.pixabay.com/photo/2015/01/20/12/51/ipad-605420_640.jpg"
-        className=""
+        className="min-h-72"
       />
       <div className="w-full rounded-xl flex items-center justify-between bottom-4 absolute px-5 ">
         <div className="flex flex-col items-center rounded-full border w-full bg-white ">

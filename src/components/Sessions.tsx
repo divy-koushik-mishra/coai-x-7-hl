@@ -2,7 +2,7 @@ import Card from "./Card"
 
 const Sessions = () => {
   return (
-    <section className="min-h-[60vh] flex flex-col items-center  py-24">
+    <section data-scroll data-scroll-speed="0.8" className="min-h-[60vh] flex flex-col items-center  py-24">
         <h3 className="uppercase tracking-widest text-[#AEAEAE]">SESSIONS</h3>
         <h2 className="text-5xl">Adapting to demand</h2>
         <div className="flex w-3/4 my-10 ">
