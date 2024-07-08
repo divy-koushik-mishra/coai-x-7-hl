@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import AboutSection from "./components/AboutSection";
 import CtaSection from "./components/CtaSection";
 import { FaqSection } from "./components/FaqSection";
