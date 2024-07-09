@@ -1,7 +1,7 @@
 const CtaSection = () => {
   const benefits = ["🔥Access to premium content", "📚Weekly newsletter", "💸Exclusive offers", "⚙️And much more..."];
   return (
-    <section data-scroll data-scroll-speed="0.8" className="bg-[#F0F0F0] p-4 flex flex-col space-y-10 items-center justify-center min-h-[60vh] md:py-24">
+    <section data-scroll data-scroll-speed="0.8" className="bg-[#F0F0F0] p-4 flex flex-col space-y-10 items-center justify-center min-h-[80vh] md:py-24">
       <h2 className="text-5xl md:w-1/3 text-center">
         Join the community today and be a part of it!
       </h2>
