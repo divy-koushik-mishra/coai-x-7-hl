@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className="min-h-[60vh] flex flex-col md:flex-row items-center justify-center px-4 md:py-24">
+    <section className="min-h-[60vh] flex flex-col md:flex-row items-center justify-center px-4 py-10 md:py-24">
       <div className="md:w-1/2 w-full flex justify-center md:px-24">
         <img src="/wordcloud.png" alt="" className="rounded-3xl w-full" />
       </div>
