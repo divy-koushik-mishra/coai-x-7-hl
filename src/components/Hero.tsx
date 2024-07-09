@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <section data-scroll className="min-h-screen w-full flex flex-col md:justify-between items-center px-4 md:px-0">
       <div className="flex flex-col items-center justify-center w-full md:w-1/2 space-y-7 mb-10 mt-0">
-        <h2 className="">AI/ML</h2>
-        <h2 className="text-5xl text-center">
+        <h2 className="text-[#AEAEAE] tracking-[0.3rem] uppercase">Placement Prep</h2>
+        <h2 className="md:text-5xl text-4xl text-center">
           Building the perfect resume in uncertain job markets
         </h2>
         <p className="text-center text-[#AEAEAE] px-2">
