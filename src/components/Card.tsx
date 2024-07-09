@@ -5,13 +5,14 @@ import React from "react";
 interface CardProps {
   heading: string;
   body: string;
+  image?: string;
 }
 
 const Card: React.FC<CardProps> = (props) => {
   return (
-    <div className="flex flex-col items-center justify-center border rounded-3xl md:w-1/3 mx-4 overflow-hidden relative">
+    <div className="flex flex-col items-center justify-center border rounded-3xl md:w-1/3 mx-4 overflow-hidden relative shadow-2xl hover:scale-110 transition">
       <img
-        src="https://cdn.pixabay.com/photo/2015/01/20/12/51/ipad-605420_640.jpg"
+        src={props.image || `https://cdn.pixabay.com/photo/2015/01/20/12/51/ipad-605420_640.jpg`}
         className="min-h-72"
       />
       <div className="w-full rounded-xl flex items-center justify-between bottom-4 absolute px-5">
