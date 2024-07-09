@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import OrganizationSection from "./components/OrganizationSection";
 import Sessions from "./components/Sessions";
 import LocomotiveScroll from "locomotive-scroll";
+import FooterBottom from "./components/FooterBottom";
 
 function App() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -34,6 +35,7 @@ function App() {
       <OrganizationSection />
       <FaqSection />
       <Footer />
+      <FooterBottom />
     </div>
   );
 }

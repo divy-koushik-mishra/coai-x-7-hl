@@ -5,7 +5,7 @@ const CtaSection = () => {
       <h2 className="md:text-5xl text-4xl md:w-1/3 text-center">
         Join the community today and be a part of it!
       </h2>
-      <div className="md:w-3/4 w-full flex flex-col md:flex-row justify-center items-center space-y-5  md:space-x-5">
+      <div className="md:w-3/4 w-full flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0  md:space-x-5">
         <input
           type="text"
           className="md:w-1/2 px-10 py-5 rounded-full outline-none"
