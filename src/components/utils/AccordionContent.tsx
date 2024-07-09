@@ -12,7 +12,7 @@ interface AccordionContentProps {
 }
 
 export function AccordionContent(props: AccordionContentProps) {
-  const [open, setOpen] = React.useState(1);
+  const [open, setOpen] = React.useState(0);
 
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
 
