@@ -1,5 +1,5 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
-
+  
 
 const Hero = () => {
   
