@@ -1,6 +1,8 @@
 import { RiArrowRightUpLine } from "@remixicon/react";
+  
 
 const Hero = () => {
+  
   return (
     <section data-scroll className="min-h-screen w-full flex flex-col md:justify-between items-center px-4 md:px-0">
       <div className="flex flex-col items-center justify-center w-full md:w-1/2 space-y-7 mb-10 mt-0">

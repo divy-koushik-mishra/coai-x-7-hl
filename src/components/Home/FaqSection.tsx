@@ -1,4 +1,4 @@
-import { AccordionContent } from "./utils/AccordionContent";
+import { AccordionContent } from "../utils/AccordionContent";
 
 export const FaqSection = () => {
   const faqs = [
@@ -40,3 +40,5 @@ export const FaqSection = () => {
     </section>
   );
 };
+
+export default FaqSection;
