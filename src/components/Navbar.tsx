@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import TopBar from "./TopBar"
 
 const Navbar = () => {
@@ -14,7 +15,10 @@ const Navbar = () => {
             <div className="my-4 md:m-0">
                 <ul className="flex flex-col md:flex-row justify-end items-end">
                     {navItems.map((item, index) => (
-                        <li key={index} className="mx-5 opacity-70 font-bold cursor-pointer hover:scale-110"> {item.name} </li>
+                        <li key={index} className="mx-5 opacity-70 font-bold cursor-pointer hover:scale-110">
+                             <Link to={item.href}>
+                             {item.name}</Link>
+                              </li>
                     ))}
                 </ul> 
             </div>
