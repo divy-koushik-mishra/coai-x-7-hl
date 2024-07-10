@@ -43,7 +43,7 @@ const BlogCards: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-[80vh] px-24 py-12 flex flex-wrap">
+    <section className="min-h-[80vh] md:px-24 py-12 flex flex-col md:flex-row flex-wrap">
       {posts.map((post, index) => (
         <ArticleCard
           key={index}
