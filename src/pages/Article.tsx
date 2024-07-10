@@ -46,14 +46,14 @@ const Article: React.FC = () => {
 
   return (
     <section className="min-h-screen w-full flex justify-between">
-      <div className="w-3/4 border flex flex-col space-y-10 p-24 items-center">
+      <div className="md:w-3/4 border flex flex-col space-y-10 p-4 md:p-24 items-center">
         <img
           src={blogPost["thumbnail-image"]}
           alt=""
-          className="w-3/4"
+          className="md:w-3/4"
         />
-        <h1 className="text-4xl">{blogPost.title}</h1>
-        <div className="flex justify-between items-center font-semibold">
+        <h1 className="md:text-4xl text-3xl">{blogPost.title}</h1>
+        <div className="flex flex-col md:flex-row justify-between items-center font-semibold">
           <h3 className="">Author: {blogPost.author}</h3>
           <h3 className="">
             Published at: {new Date(blogPost.$createdAt).toLocaleDateString("en-US")}
