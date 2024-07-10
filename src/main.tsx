@@ -5,6 +5,7 @@ import App from './App.tsx';
 import './index.css';
 import Navbar from './components/Navbar.tsx';
 import { ThemeProvider } from "@material-tailwind/react";
+import FooterBottom from './components/FooterBottom.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <Navbar />
         <App />
+        <FooterBottom />
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,

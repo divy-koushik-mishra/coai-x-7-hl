@@ -1,4 +1,4 @@
-import { Client, Databases, ID } from "appwrite";
+import { Client, Databases, ID, Query } from "appwrite";
 
 // Initialize the Appwrite client
 const client = new Client();
@@ -31,19 +31,22 @@ export const createDocument = async (data: object) => {
 
 // Function to get a document by ID
 export const getDocument = async (documentId: string) => {
-  try {
-    const response = await databases.getDocument(
-      DATABASE_ID,
-      COLLECTION_ID,
-      documentId
-    );
-    return response;
-  } catch (error) {
-    console.error('Error getting document:', error);
-    throw error;
-  }
-};
-
+    try {
+      const promise = databases.listDocuments(
+        DATABASE_ID,
+        COLLECTION_ID,
+        [
+          Query.equal('slug', documentId)
+        ]
+      );
+  
+      const response = await promise;
+      return response.documents[0]; // Assuming you expect only one document or handle multiple documents accordingly
+    } catch (error) {
+      console.error('Error getting document:', error);
+      throw error;
+    }
+  };
 // Function to update a document
 export const updateDocument = async (documentId: string, data: object) => {
   try {
