@@ -116,7 +116,7 @@ const ContactForm = () => {
 
     try {
       await createContactDocument(formattedData);
-      toast.success("Request recieved successfylly!");
+      toast.success("Request recieved successfully!");
       // Optionally, reset the form
       setFormData({
         first_name: "",
