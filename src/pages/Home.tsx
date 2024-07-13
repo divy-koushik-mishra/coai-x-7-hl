@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import Hero from '../components/Home/Hero';
 import OrganizationSection from '../components/Home/OrganizationSection';
 import Sessions from '../components/Home/Sessions';
-import FooterBottom from '../components/FooterBottom';
 import LocomotiveScroll from 'locomotive-scroll';
 
 const Home = () => {
@@ -35,7 +34,6 @@ const Home = () => {
       <OrganizationSection />
       <FaqSection />
       <Footer />
-      <FooterBottom />
     </div>
   );
 };
