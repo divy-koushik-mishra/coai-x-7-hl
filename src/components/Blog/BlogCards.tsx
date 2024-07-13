@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ArticleCard from "./ArticleCard";
-import { getAllDocuments } from "../../utils/appwrite-utils";
+import { getAllBlogs } from "../../utils/appwrite-utils";
 
 interface Post {
   $id: string;
@@ -21,7 +21,7 @@ const BlogCards: React.FC = () => {
   useEffect(() => {
     const fetchDocuments = async () => {
       try {
-        const docs = await getAllDocuments();
+        const docs = await getAllBlogs();
         const formattedPosts: Post[] = docs.map((post) => ({
           $id: post.$id,
           title: post.title as string,

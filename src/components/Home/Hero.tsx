@@ -1,4 +1,4 @@
-import { RiArrowRightUpLine } from "@remixicon/react";
+import {  RiArrowRightDownLine } from "@remixicon/react";
   
 
 const Hero = () => {
@@ -15,9 +15,15 @@ const Hero = () => {
           recruiters are looking for. What could land you the perfect job and
           why you are not getting that interview call
         </p>
+        <a href="#faq">
+
         <button className="border flex  items-center justify-between space-x-5 px-9 py-2 border-[#AEAEAE] hover:bg-[#c7c7c7] hover:text-black transition rounded-full">
-          Explore More <RiArrowRightUpLine />{" "}
+          Explore More <RiArrowRightDownLine />{" "}
         </button>
+        </a>
+        {/* <button className="border flex  items-center justify-between space-x-5 px-9 py-2 border-[#AEAEAE] hover:bg-[#c7c7c7] hover:text-black transition rounded-full">
+          Explore More <RiArrowRightUpLine />{" "}
+        </button> */}
       </div>
 
       <div className=" flex justify-center items-center mb-0 my-10">
