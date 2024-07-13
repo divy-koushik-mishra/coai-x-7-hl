@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutSection = () => {
   return (
     <section className="min-h-[80vh] md:min-h-[60vh]  flex flex-col md:flex-row items-center justify-center px-4 py-10 md:py-24">
@@ -14,6 +16,7 @@ const AboutSection = () => {
             Learn What an impactful GenAI project looks like, Calling an API
             isn't helping your resume
           </p>
+          <Link to="/contact">
           <button className="border flex w-fit items-center justify-between px-9 py-2 border-[#AEAEAE] hover:bg-[#c7c7c7] hover:text-black transition rounded-full">
             Connect with Mentor
             <svg
@@ -31,6 +34,7 @@ const AboutSection = () => {
               />
             </svg>
           </button>
+          </Link>
         </div>
       </div>
     </section>

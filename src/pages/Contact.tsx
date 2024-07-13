@@ -1,9 +1,10 @@
 import ContactForm from "../components/contact/ContactForm";
+import ContactSidebar from "../components/contact/ContactSidebar";
 
 const Contact = () => {
   return (
-    <section className="w-full h-full flex justify-center items-center py-10 px-4">
-      <div className="md:w-3/4  flex flex-col items-center">
+    <section className="w-full h-full flex justify-center items-center py-10 md:px-24">
+      <div className="  flex flex-col items-center">
         <div className="">
           <h2 className="text-4xl md:text-5xl text-center">Contact our team</h2>
           <p className="md:text-lg md:px-52 py-4 text-[#868686] text-center font-semibold">
@@ -12,8 +13,9 @@ const Contact = () => {
             other questions or concerns you might have. We're here to help!
           </p>
         </div>
-        <div className="w-full">
+        <div className="w-full flex flex-col md:flex-row px-5 md:space-x-14">
           <ContactForm />
+          <ContactSidebar />
         </div>
       </div>
     </section>
