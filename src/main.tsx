@@ -7,6 +7,11 @@ import Navbar from './components/Navbar.tsx';
 import { ThemeProvider } from "@material-tailwind/react";
 import FooterBottom from './components/FooterBottom.tsx';
 import BackToTop from './components/utils/BackToTop.tsx';
+import ReactGA from 'react-ga4';
+
+// google analytics
+const trackingId =  import.meta.env.VITE_GA_TRACKING_ID;
+ReactGA.initialize(trackingId, { testMode: true });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
