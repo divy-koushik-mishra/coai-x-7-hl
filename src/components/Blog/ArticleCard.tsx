@@ -18,7 +18,7 @@ interface CardProps {
 const ArticleCard: React.FC<CardProps> = (props) => {
   if (props.loading) {
     return (
-      <div className="md:w-[30%] min-h-[550px] border mx-5 my-10">
+      <div className="md:w-[30%] min-h-[550px]  mx-5 my-10">
         <Skeleton height={320} />
         <div className="py-5 flex flex-col space-y-2">
           <Skeleton width={200} height={40} />
