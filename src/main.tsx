@@ -11,7 +11,7 @@ import ReactGA from 'react-ga4';
 
 // google analytics
 const trackingId =  import.meta.env.VITE_GA_TRACKING_ID;
-ReactGA.initialize(trackingId, { testMode: true });
+ReactGA.initialize(trackingId);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
