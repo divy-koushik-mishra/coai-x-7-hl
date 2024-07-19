@@ -28,7 +28,7 @@ const BackToTop: React.FC = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4  w-10 h-10 rounded-full bg-black text-white shadow-lg hover:scale-105 transition duration-300"
+          className="fixed bottom-4 right-4  w-10 h-10 rounded-full bg-black text-white shadow-lg hover:scale-125 transition duration-300"
         >
           ↑
         </button>
