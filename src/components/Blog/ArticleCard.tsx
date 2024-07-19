@@ -34,7 +34,7 @@ const ArticleCard: React.FC<CardProps> = (props) => {
   }
 
   return (
-    <div className="md:w-[30%] min-h-[550px] border mx-5 my-10 cursor-pointer hover:scale-105 transition">
+    <div className="md:w-[30%] min-h-[550px]  mx-5 my-10 cursor-pointer hover:scale-105 transition">
       <Link to={`/blog/${props.slug || "404"}`}>
         <div className="">
           <img src={props.image || "/about.jpg"} alt="" className="h-80 w-full" />
