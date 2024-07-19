@@ -1,4 +1,5 @@
-import { AccordionContent } from "./utils/AccordionContent";
+import { Link } from "react-router-dom";
+import { AccordionContent } from "../utils/AccordionContent";
 
 export const FaqSection = () => {
   const faqs = [
@@ -22,13 +23,15 @@ export const FaqSection = () => {
   ];
 
   return (
-    <section data-scroll data-scroll-speed="0.8" className="flex min-h-[80vh] md:min-h-[60vh]  flex-col md:flex-row p-4 py-10 md:px-24">
+    <section id="faq" className="flex min-h-[80vh] md:min-h-[60vh]  flex-col md:flex-row p-4 py-10 md:px-24">
       <div className="md:w-1/2 flex flex-col justify-center md:p-24 space-y-4 items-center md:items-start">
         <h3 className="tracking-widest uppercase text-[#AEAEAE]">FAQ'S</h3>
         <h3 className="md:text-5xl text-4xl text-center md:text-left">Find the answer to your common questions</h3>
+       <Link to="/contact">
         <button className="border w-fit flex  items-center justify-between space-x-5 px-9 py-2 border-[#AEAEAE] hover:bg-[#c7c7c7] hover:text-black transition rounded-full">
           Connect With Us
         </button>
+        </Link>
       </div>
       <div className="md:w-1/2 flex flex-col justify-center md:p-24 space-y-4">
     
@@ -40,3 +43,5 @@ export const FaqSection = () => {
     </section>
   );
 };
+
+export default FaqSection;

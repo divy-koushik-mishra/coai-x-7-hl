@@ -1,6 +1,8 @@
-import { RiArrowRightUpLine } from "@remixicon/react";
+import {  RiArrowRightDownLine } from "@remixicon/react";
+  
 
 const Hero = () => {
+  
   return (
     <section data-scroll className="min-h-screen w-full flex flex-col md:justify-between items-center px-4 md:px-0">
       <div className="flex flex-col items-center justify-center w-full md:w-1/2 space-y-7 mb-10 mt-0">
@@ -13,9 +15,15 @@ const Hero = () => {
           recruiters are looking for. What could land you the perfect job and
           why you are not getting that interview call
         </p>
+        <a href="#faq">
+
         <button className="border flex  items-center justify-between space-x-5 px-9 py-2 border-[#AEAEAE] hover:bg-[#c7c7c7] hover:text-black transition rounded-full">
-          Explore More <RiArrowRightUpLine />{" "}
+          Explore More <RiArrowRightDownLine />{" "}
         </button>
+        </a>
+        {/* <button className="border flex  items-center justify-between space-x-5 px-9 py-2 border-[#AEAEAE] hover:bg-[#c7c7c7] hover:text-black transition rounded-full">
+          Explore More <RiArrowRightUpLine />{" "}
+        </button> */}
       </div>
 
       <div className=" flex justify-center items-center mb-0 my-10">

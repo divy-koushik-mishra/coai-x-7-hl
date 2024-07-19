@@ -1,43 +1,31 @@
-import { useEffect, useRef } from "react";
-import AboutSection from "./components/AboutSection";
-import CtaSection from "./components/CtaSection";
-import { FaqSection } from "./components/FaqSection";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import OrganizationSection from "./components/OrganizationSection";
-import Sessions from "./components/Sessions";
-import LocomotiveScroll from "locomotive-scroll";
-import FooterBottom from "./components/FooterBottom";
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Article from './pages/Article';
+import NotFound from './pages/NotFound';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 
-function App() {
-  const scrollRef = useRef<HTMLDivElement>(null);
+
+const App = () => {
+
+  const location = useLocation();
 
   useEffect(() => {
-    if (scrollRef.current) {
-      const scroll = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true,
-        // Add other Locomotive Scroll options here if needed
-      });
-
-      return () => {
-        if (scroll) scroll.destroy();
-      };
-    }
-  }, []);
+    // Track page view when the route changes
+    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+  }, [location]);
 
   return (
-    <div ref={scrollRef} className="" data-scroll-container>
-      <Hero />
-      <CtaSection />
-      <AboutSection />
-      <Sessions />
-      <OrganizationSection />
-      <FaqSection />
-      <Footer />
-      <FooterBottom />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/blog/:slug" element={<Article />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
-}
+};
 
 export default App;

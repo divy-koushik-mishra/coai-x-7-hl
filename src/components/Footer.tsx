@@ -1,4 +1,3 @@
-import { RiInstagramLine, RiTwitterLine, RiYoutubeLine } from "@remixicon/react";
 
 const Footer = () => {
   return (
@@ -26,16 +25,7 @@ const Footer = () => {
           Campus of AI
         </h2>
       </div>
-      <div className="border flex justify-between space-x-4 md:block md:relative w-full">
-
-      
-      <div className="relative md:bottom-[17rem] bottom-0 md:-right-[10rem] border border-black w-1/2 md:w-1/3 py-2 px-4 rounded-b-2xl bg-[#2B2B2B] text-white">
-        All right reserved © 2024
-      </div>
-      <div className="relative flex   items-center justify-between bottom-0 md:bottom-[19.7rem] md:left-[52rem] border border-black w-1/2 md:w-1/3 py-2 px-4 rounded-b-2xl bg-[#2B2B2B] text-white">
-        <RiInstagramLine /> <RiYoutubeLine /> <RiTwitterLine />
-      </div>
-      </div>
+  
     </footer>
   );
 };

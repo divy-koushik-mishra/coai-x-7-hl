@@ -7,7 +7,7 @@ const Sessions = () => {
         <h2 className="md:text-5xl text-4xl text-center md:text-left">Adapting to demand</h2>
         <div className="flex flex-col md:flex-row md:w-3/4 my-10 space-y-10 md:space-y-0">
             <Card image={"/jupyter.jpg"} heading="" body="Can Jupyter get you placed?"/>
-            <Card image={"https://media.licdn.com/dms/image/D4D12AQH15r504BJaoA/article-cover_image-shrink_720_1280/0/1686555629622?e=2147483647&v=beta&t=1niBzax5loJEavfneYtun9kt-TkoGP13ofO2z_9kjPI"} heading="" body="is Cloud a must?"/>
+            <Card image={"cloud.png"} heading="" body="is Cloud a must?"/>
             <Card image={"/resume.jpg"} heading="" body="Ideal Projects in 2k24"/>
         </div>
     </section>
